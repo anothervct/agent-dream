@@ -61,4 +61,5 @@ Recommended path:
 
 - `Agent Dream` is intentionally instruction-only in v0. It does not require scripts, tools, or memory persistence.
 - The minimal contract is the skill text itself plus the expected Markdown output format.
-- If a future release adds a one-line installer, this file should be updated with the exact supported targets and any fallback behavior.
+- The recommended installer is `npx skills add anothervct/agent-dream`.
+- Manual directory-based installation remains the fallback when a harness needs explicit placement.

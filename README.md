@@ -58,7 +58,25 @@ The repository shape follows the hidden-folder pattern used by cross-harness ski
 
 ## Install
 
-The one-line installer flow is still being prepared. Until then, you can install `dream` manually by copying the matching folder into your harness.
+Install with the `skills` CLI:
+
+```bash
+npx skills add anothervct/agent-dream
+```
+
+If you want to be explicit about the skill name:
+
+```bash
+npx skills add anothervct/agent-dream --skill dream
+```
+
+For a user-level install:
+
+```bash
+npx skills add anothervct/agent-dream -g
+```
+
+## Manual Install Fallback
 
 ### Codex
 
