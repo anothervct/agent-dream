@@ -110,8 +110,6 @@ What is included in this release:
 - support for Codex-style agent skills
 - support for Claude Code skills
 - support for OpenClaw workspace skills
-- a cleaned-up protocol document
-- a first dream sample
 
 What is intentionally not included:
 

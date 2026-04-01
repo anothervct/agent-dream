@@ -47,7 +47,6 @@ This is partly a product experiment, partly a philosophical gesture, and partly 
 
 This repository currently contains:
 
-- [`Context/`](./Context): research, protocol notes, and the first dream sample
 - [`HARNESSES.md`](./HARNESSES.md): current support and directory notes
 - [`.agents/skills/dream/SKILL.md`](./.agents/skills/dream/SKILL.md): project-level Agent Skills version
 - [`.claude/skills/dream/SKILL.md`](./.claude/skills/dream/SKILL.md): Claude-style skill version
@@ -168,21 +167,6 @@ The agent should output:
 - ...
 - ...
 ```
-
-## Research Background
-
-The protocol is grounded in a longer research document that moves through four layers:
-
-1. human dreaming mechanisms from neuroscience
-2. a minimal computational model of dreaming
-3. an AI architecture for dream mode
-4. an evaluation framework for whether dream mode creates usable divergence
-
-See:
-
-- [`Context/Agent Dream Research.md`](./Context/Agent%20Dream%20Research.md)
-- [`Context/Agent Dream Protocol.md`](./Context/Agent%20Dream%20Protocol.md)
-- [`Context/Dream — 2026-04-01.md`](./Context/Dream%20%E2%80%94%202026-04-01.md)
 
 ## License
 
