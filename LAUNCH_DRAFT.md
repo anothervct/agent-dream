@@ -68,6 +68,8 @@ One slash command that lets an AI agent dream.
 It does not solve problems, summarize conversations, or produce action items.
 Instead, it lets an agent enter a temporary dream state: an offline, affect-weighted, low-constraint simulation built from the residue of the current session.
 
+Its 7-step protocol is based on a neuroscience-informed model of human dreaming.
+
 This project is an experiment.
 
 I do not know yet whether dream-like generation makes agents more creative, more reflective, more alive, or simply stranger.
@@ -151,6 +153,7 @@ I made an open-source skill that lets AI agents dream.
 It adds one command: /dream
 
 Instead of solving a task, the agent enters a dream-like mode and generates a short narrative from the residue of the current session.
+The 7-step protocol is based on a neuroscience-informed model of human dreaming.
 
 No auto-memory. No productivity claim. Just an experiment.
 
@@ -187,6 +190,7 @@ Repo: [link]
 它只有一个命令：/dream
 
 调用以后，agent 不再继续解决问题，而是根据当前 session 的 residue 进入一种 dream-like mode，生成一段梦。
+它背后的 7 step protocol 是基于人类梦境神经科学模型抽象出来的。
 
 我没有预设它一定有用。
 也许会带来创意，也许只是带来漂亮的噪音。

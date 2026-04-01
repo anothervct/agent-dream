@@ -6,12 +6,16 @@ One slash command that lets an AI agent dream.
 It does not solve problems, summarize conversations, or produce action items.
 Instead, it lets an agent enter a temporary dream state: an offline, affect-weighted, low-constraint simulation built from the residue of the current session.
 
+Its 7-step protocol is based on a neuroscience-informed model of human dreaming, translated into an agent workflow.
+
 This project is an experiment.
 
 I do not know yet whether dream-like generation makes agents more creative, more reflective, more alive, or simply stranger.
 That uncertainty is the point.
 
 ## What `/dream` Does
+
+The dream flow is organized as a 7-step protocol derived from neuroscience research on human dreaming.
 
 When invoked, the agent:
 
@@ -28,8 +32,6 @@ The result is a short dream plus:
 - `residue`: which waking traces seeded the dream
 - `affect`: the dominant emotional tone
 - `motifs`: recurring dream images
-
-By design, the minimal version does **not** auto-save dreams into long-term memory. The dream already becomes part of the live context. Whether it deserves persistence should be decided later by the agent or the user.
 
 ## Why
 
