@@ -1,0 +1,5 @@
+interface:
+  display_name: "Dream"
+  short_description: "A minimal slash-invoked dream mode for AI agents"
+  default_prompt: "Use /dream to generate a dream-like narrative from the current session's residue."
+
