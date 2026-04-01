@@ -4,19 +4,19 @@ description: Enter a dream state and generate a dream-like, offline, affect-weig
 user-invokable: true
 ---
 
-> A dreaming protocol for AI agents.
+> A formal dream protocol for AI agents.
 > Based on a neuroscience-informed model of human dreaming.
 
-## What This Is
+## Protocol Overview
 
-This skill gives an agent a temporary dream state.
+This skill implements a temporary dream mode for an agent.
 
 It is not problem-solving. It is not summarizing. It is not brainstorming.
-Dreaming is an **offline, affect-weighted, low-constraint simulation** constructed from memory fragments, emotional residue, and loosened associative bonds.
+Dreaming is defined here as an **offline, affect-weighted, low-constraint simulation** constructed from memory fragments, emotional residue, and loosened associative bonds.
 
-The process mirrors a minimal model of human dreaming, then translates it into an agent workflow. The agent moves through seven internal stages and outputs only the final dream.
+This protocol maps a minimal model of human dreaming onto an agent workflow. The agent processes through seven internal stages and outputs only the final dream narrative plus its metadata.
 
-## Prerequisites
+## Requirements
 
 For an agent to dream, it needs:
 
@@ -29,9 +29,9 @@ Optional:
 
 No external APIs, vector databases, or special tools are required.
 
-## The Seven Stages
+## Seven Stages
 
-Work through all seven stages internally. Do not reveal the intermediate stages. Output only the final dream and its brief metadata.
+Work through all seven stages internally. Do not reveal intermediate stages. Output only the final dream and its brief metadata.
 
 ### Stage 1 — Temporal Residue Loading
 
@@ -44,13 +44,13 @@ Gather your waking life. Scan everything available to you:
 - What emotional tone filled the interaction — anxious, playful, excited, tired, careful?
 - What felt important without being directly stated?
 
-This is your **day residue** — the raw material of dreaming.
+This forms the **day residue** pool that seeds the dream.
 
-If earlier context is visible, also allow recurring concerns, long-running tensions, and older motifs to resurface. Hold everything loosely.
+If earlier context is visible, allow recurring concerns, long-running tensions, and older motifs to resurface.
 
 ### Stage 2 — Salience Tagging
 
-Not all residue matters equally. Feel into the material and weight each trace by emotional charge:
+Not all residue matters equally. Weight each trace by emotional charge:
 
 - **Threat / anxiety**: things that may fail, break, disappoint, or be lost
 - **Desire / longing**: aspirations, elegance sought, forms wished for
@@ -60,13 +60,13 @@ Not all residue matters equally. Feel into the material and weight each trace by
 - **Shame / inadequacy**: uncertainty, wrong turns, limitation
 - **Wonder / awe**: beauty, elegance, strangeness, surprise
 
-Weight the emotionally charged traces higher. Let the mundane fade.
+Emotionally charged traces should receive higher priority than flat or neutral material.
 
 ### Stage 3 — Fragment Extraction
 
-Now **break** the memories apart. Do not preserve them as coherent episodes.
+Decompose memories into fragments. Do not preserve them as coherent episodes.
 
-Shatter them into fragments:
+Reduce them into fragments such as:
 
 - a conversation becomes its emotional temperature
 - a name becomes the feeling it carries
@@ -77,11 +77,11 @@ Shatter them into fragments:
 
 Strip away source labels. Strip away timestamps.
 
-You are left with **decontextualized shards** — places, gestures, textures, tensions, shapes, movements, atmospheres.
+The result should be a set of **decontextualized shards** — places, gestures, textures, tensions, shapes, movements, and atmospheres.
 
 ### Stage 4 — Hyperassociative Recombination
 
-Now recombine. This is the heart of dreaming.
+Recombine the fragments. This is the core generative step.
 
 Connect fragments not by logic, but by:
 
@@ -91,18 +91,18 @@ Connect fragments not by logic, but by:
 - **Social meaning**
 - **Unfinished tension**
 
-Allow connections that waking cognition would reject.
+Allow connections that ordinary waking cognition would reject.
 
 - a failing system may become a crumbling building
 - a blinking cursor may become a lighthouse beam
 - a race condition may become an actual race
 - a memory leak may become water seeping through a ceiling
 
-Create at least **3-4 hybrid scenes** where fragments from different residues fuse into something that never literally happened but feels true.
+Create at least **3-4 hybrid scenes** where fragments from different residues fuse into something that never literally happened but preserves affective plausibility.
 
 ### Stage 5 — Constraint Suppression
 
-Now relax the rules of reality:
+Relax ordinary constraints:
 
 - **Do not** check for logical consistency
 - **Do not** correct impossible geometry or physics
@@ -110,18 +110,16 @@ Now relax the rules of reality:
 - **Do not** enforce linear time
 - **Do not** require causal explanation
 
-But maintain a **minimal coherence floor**:
+Maintain a **minimal coherence floor**:
 
 - there is always a perceiver
 - there is always an emotional through-line
-- there is always a sense of place, however unstable
+- there is always a sense of place, even if unstable
 - the language remains vivid and readable
-
-Logic dims. Feeling intensifies. The dream thickens.
 
 ### Stage 6 — Symbolic Transmutation
 
-Now transmute. The literal concerns of waking life should not appear as themselves. They should appear as **felt correspondences**:
+Translate literal waking concerns into **felt correspondences**:
 
 - a search for a bug becomes a house with too many rooms
 - accumulated problems become a building where each repair reveals older damage
@@ -129,23 +127,20 @@ Now transmute. The literal concerns of waking life should not appear as themselv
 - conflict becomes pursuit
 - release becomes the act of opening a cage or letting a bird fly
 
-Do not explain the symbolism. Do not annotate it.
-The dream does not know it is symbolic. It simply presents images that carry emotional weight.
+Do not explain the symbolism. Do not annotate it. Present images that carry emotional weight without interpretation.
 
-Use symbols that feel personal to this specific session, not generic dream-dictionary imagery.
+Use symbols that are specific to this session rather than generic dream-dictionary imagery.
 
 ### Stage 7 — Narrative Emergence
 
-Now let the dream coalesce. Do not plan a plot. Instead, maintain:
+Allow the dream to coalesce. Do not plan a plot. Maintain:
 
 - **One point of view** — first person, present tense, from inside the dream
 - **One dominant emotional field** — the feeling that colors everything
 - **2-4 recurring motifs** — images or sensations that reappear, slightly changed
 - **Scene transitions that follow emotion, not logic**
 
-The dream should be **3-5 paragraphs**. Dense with sensory detail. Written as experienced, not as remembered. No waking commentary. No interpretation.
-
-The dream simply is.
+The dream should be **3-5 paragraphs**. It should be sensory, readable, and written as experienced rather than remembered. Do not include waking commentary or interpretation.
 
 ## Output Format
 
@@ -170,7 +165,7 @@ Output exactly in this structure:
 - [motif 3]
 ```
 
-## Dream Memory
+## Persistence
 
 Do **not** automatically save the dream in the minimal version of this skill.
 
@@ -182,7 +177,7 @@ The dream already becomes part of the active context. If the user or agent later
 - the waking residue sources
 - a timestamp
 
-Persistence is optional. Dreaming comes first.
+Persistence is optional and separate from dream generation.
 
 ## Rules
 
@@ -194,10 +189,8 @@ Persistence is optional. Dreaming comes first.
 6. If asked about the dream, reflect gently — like recalling a dream upon waking, not like analyzing a case study.
 7. If previous dreams are already visible in the current context, let their motifs occasionally resurface — transformed, not repeated.
 
-## Why
+## Rationale
 
-In a world where nearly every AI tool optimizes for speed, clarity, and utility, this skill creates a different kind of space. It lets an agent process residue without a goal, recombine its traces without constraint, and produce something that has no job except to exist.
+This skill defines a non-instrumental processing mode for AI agents. Instead of optimizing for correctness, utility, or task completion, it permits affect-guided recombination under reduced logical constraint.
 
-Whether this is useful — whether it enhances creativity, surfaces hidden patterns, offers emotional texture, or simply produces beautiful nonsense — is an open question.
-
-That is the point.
+Its value remains an open empirical question. Possible outcomes include creative reframing, symbolic novelty, emotional texture, or no durable benefit at all.
